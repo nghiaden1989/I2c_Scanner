@@ -1,7 +1,8 @@
 
 #include "main.h"
 
-uint8_t debug[10];  //contains module i2c addresses
+uint8_t debug[10];  //contains module i2c addresses   .... you can see i2c addresses of your modules in this array
+										//You must access debug mode to see the i2c address of those modules
 uint8_t debug_counter=0;
 uint8_t i,j;
 uint8_t deb[128];
@@ -24,7 +25,7 @@ int main(void)
   SystemClock_Config();
   MX_GPIO_Init();
   MX_I2C1_Init();
-  MX_USART2_UART_Init();
+  MX_USART2_UART_Init(); // for print to terminal window if you want =))
 	HAL_Delay(1000);
  	
  	
