@@ -2,7 +2,10 @@
 #include "main.h"
 
 uint8_t debug[10];  //contains module i2c addresses   .... you can see i2c addresses of your modules in this array
-										//You must access debug mode to see the i2c address of those modules
+//You must access debug mode to see the i2c address of those modules
+//STM32F103C8T6
+//use I2C1 with SDA: PB7 ----  SCL: PB6         or you can see in CubeMX project
+//use UART1 with  Tx: PA2 ---  Rx: PA3
 uint8_t debug_counter=0;
 uint8_t i,j;
 uint8_t deb[128];
